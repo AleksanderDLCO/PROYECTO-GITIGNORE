@@ -1,0 +1,24 @@
+{
+  "queries": [
+    {
+      "sql": "SELECT Marca, SUM(`precio de venta S_`) AS Total_Ventas FROM `prueba_poc_inretail.tabla_ventas_es` GROUP BY Marca",
+      "cabecera": [["Marca", "Marca"], ["Total_Ventas", "Total de Ventas"]]
+    },
+    {
+      "sql": "SELECT Marca, SUM(`precio de venta S_`) AS TotalVentas FROM prueba_poc_inretail.tabla_ventas_es GROUP BY Marca",
+      "cabecera": [["Marca", "Marca"], ["TotalVentas", "Total de Ventas"]] 
+    },
+    {
+      "sql": "SELECT Tipo, SUM(`precio de venta S_`) AS Total_Venta FROM `prueba_poc_inretail.tabla_ventas_es` WHERE Marca = 'Asics' GROUP BY Tipo",
+      "cabecera": [["Tipo", "Productos de Asics"], ["Total_Venta", "Total de Ventas"]]
+    },
+    {
+      "sql": "SELECT Tipo, SUM(`precio de venta S_`) AS Total_Venta FROM `prueba_poc_inretail.tabla_ventas_es` WHERE Marca = 'Adidas' GROUP BY Tipo",
+      "cabecera": [["Tipo", "Productos de Adidas"], ["Total_Venta", "Total de Ventas"]]
+    },
+    {
+      "sql": "SELECT Tipo, SUM(`precio de venta S_`) AS Total_Venta FROM `prueba_poc_inretail.tabla_ventas_es` WHERE Marca = 'Nike' GROUP BY Tipo",
+      "cabecera": [["Tipo", "Productos de Nike"], ["Total_Venta", "Total de Ventas"]]
+    }
+  ]
+}
