@@ -18,7 +18,7 @@ Es por esta razón que se desarrolla la PoC, para integrarse en el flujo de git 
 
 - Debes tener una ```api key``` de la plataforma de OpenAI.
 - Crea un archivo ```.env``` en la raíz del proyecto con contenido ```OPENAI_API_KEY={YOUR_KEY}```
-- Python 3.12 para utilizar el proyecto.
+- Utiliza pip de python 3.12 para instalar las bibliotecas del proyecto con ```pip install -r requirements.txt```
 
 ## Uso
 En la raíz del proyecto ejecuta el comando ```python -m my_module```. Esto ejectua el archivo ```__main__.py``` y genera un archivo en ```./.gitignore```.
