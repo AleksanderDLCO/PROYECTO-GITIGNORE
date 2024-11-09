@@ -17,5 +17,8 @@ def classify_files_to_ignore(files):
         decision = response.choices[0].message.content.strip()
         if decision.lower() == 'sí':
             print(file_path)
+            # remove './' at the start if there's any
+            if file_path.startswith('./'):
+                file_path = file_path[2:]
             ignore_patterns.append(file_path)
     return ignore_patterns

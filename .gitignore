@@ -1,3 +1,5 @@
+#git files
+.git
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -82,4 +84,4 @@ celerybeat.pid
 # IDE-specific
 .idea/
 # Archivos auto-generados
-./Reporte_Ventas_Multiple.pdf
+Reporte_Ventas_Multiples.pdf

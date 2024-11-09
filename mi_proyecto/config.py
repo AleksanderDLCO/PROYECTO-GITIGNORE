@@ -9,6 +9,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def load_python_vscode_gitignore():
     # Plantilla de .gitignore para proyectos de Python y VSCode
     return [
+        "#git files",
+        ".git",
         "# Byte-compiled / optimized / DLL files",
         "__pycache__/",
         "*.py[cod]",
